@@ -10,6 +10,7 @@ namespace BlastyBird
     {
         public BlastyBirdGame() : base("BlastyBird", 1150, 750, Color.SkyBlue)
         {
+
         }
     }
 }
