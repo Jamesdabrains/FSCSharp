@@ -12,9 +12,9 @@ namespace BlastyBird
         #region Constructors
         public Bird(Vector2 location)
         {
-            location = Location;
+            Location = location;
             var texture = Raylib.LoadTexture("Resources/Bird.png");
-            Body = new Sprite(texture, 0.5f);
+            Body = new Sprite(texture, 2f);
 
         }
         #endregion
@@ -22,7 +22,7 @@ namespace BlastyBird
         #region Overrides
         public override void Draw(float delta)
         {
-            throw new NotImplementedException();
+            Body.Draw(Location);
         }
 
         public override void Update(float delta)
